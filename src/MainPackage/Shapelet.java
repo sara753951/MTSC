@@ -11,8 +11,8 @@ public class Shapelet implements Comparable<Shapelet>{
     int     pos;
     int     len;
     int     num_diff;
-    ArrayList<Integer> c_in;
-    ArrayList<Integer> c_out;
+    int[] c_in;
+    int[] c_out;
     ArrayList<Double> ts;
 
     public Shapelet() {
@@ -69,7 +69,7 @@ public class Shapelet implements Comparable<Shapelet>{
         this.dist_th = dist_th;
     }
 
-    public void setValueAll(double gain, double gap, double dist_th, int obj, int pos, int len, int num_diff, ArrayList<Integer> c_in, ArrayList<Integer> c_out){
+    public void setValueAll(double gain, double gap, double dist_th, int obj, int pos, int len, int num_diff, int[] c_in, int[] c_out){
         this.gain = gain;
         this.gap = gap;
         this.dist_th = dist_th;
