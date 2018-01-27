@@ -596,7 +596,7 @@ public class TFSAFastShapelet {
         return bsf;
     }
 
-    double CalInfoGain2(int[] c_in, int[] c_out, int total_c_in, int total_c_out) {
+    public double CalInfoGain2(int[] c_in, int[] c_out, int total_c_in, int total_c_out) {
         return class_entropy - ((double) (total_c_in) / num_obj * EntropyArray(c_in, total_c_in) + (double) (total_c_out) / num_obj * EntropyArray(c_out, total_c_out));
     }
 
@@ -612,7 +612,7 @@ public class TFSAFastShapelet {
         return en;
     }
 
-    double distance(double[] Q, int[] order, double[] T, int j, int m, double mean, double std, double best_so_far) {
+    public double distance(double[] Q, int[] order, double[] T, int j, int m, double mean, double std, double best_so_far) {
         best_so_far = Double.MAX_VALUE;
         int i;
         double sum = 0;
